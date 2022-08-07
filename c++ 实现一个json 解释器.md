@@ -230,14 +230,14 @@ Val parser_bool()
 {
     if (ss.peek() == 'f')
     {
-        while (ss.peek() != -1)
+        for(int i = 0; i < 5;i++)
             ss.get();
 
         return Val(false);
     }
     else
     {
-        while (ss.peek() != -1)
+        for(int i = 0; i < 4;i++) // sizeof(true)/sizeof(true[0]) = 4
             ss.get();
         return Val(true);
     }
