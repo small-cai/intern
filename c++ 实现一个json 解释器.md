@@ -325,7 +325,7 @@ int main()
     ss << fin.rdbuf();
     Val x = parser(ss.str());
     cout << "email"<<x["email"] << endl;
-    cout <<"phone" << x["phone"]["home"] << en
+    cout <<"phone" << x["phone"]["home"] << endl;
     // cout << x << endl;
     return 0;
 }
